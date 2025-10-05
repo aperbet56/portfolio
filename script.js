@@ -86,9 +86,9 @@ new Typewriter(subtitle, {
   .typeString("<strong> Développeuse web !</strong> ")
   .pauseFor(2000)
   .deleteChars(6)
-  .typeString(`<span style="color:#ff8906;"> Front-end !</span> `)
+  .typeString(`<span style="color:#b8c1ec"> Front-end !</span> `)
   .pauseFor(2000)
   .deleteChars(12)
-  .typeString(`<span style="color:#e53170"> Back-end !</span> `)
+  .typeString(`<span style="color:#eebbc3"> Back-end !</span> `)
   .pauseFor(2000)
   .start();
