@@ -28,7 +28,9 @@ button {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
     font-family: "Alan Sans", sans-serif;
 }
 
@@ -62,8 +64,7 @@ body {
 header {
     width: 100%;
     height: 100vh;
-    background-color: #2b2f4b;
-    background-color: #0f0e17;
+    background-color: #232946;
     color: #fffffe;
     display: flex;
     justify-content: center;
@@ -106,7 +107,7 @@ header {
 
 .about {
     background-color: #fffffe;
-    color: #0f0e17;
+    color: #232946;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,14 +138,13 @@ header {
 .about__description {
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #2e2f3e;
 }
 
 .btn {
     text-align: center;
     padding: 12px 16px;
-    background-color: #ff8906;
-    color: #fffffe;
+    background-color: #eebbc3;
+    color: #232946;
     font-size: 1rem;
     font-weight: 500;
     border-radius: 10px;
@@ -152,14 +152,14 @@ header {
 }
 
 .btn:hover {
-    background-color: #e53170;
+    background-color: #b8c1ec;
 }
 
 /**** section skills ****/
 
 .skills {
-    background-color: #2b2f4b;
-    color: #fffffe;
+    background-color: #d4d8f0;
+    color: #232946;
 }
 
 .skills__title {
@@ -167,11 +167,67 @@ header {
 }
 
 .skills__title,
-.skills__subtitle {
+.skills__subtitle,
+.skills__presentation {
     text-align: center;
     margin-bottom: 20px;
 }
 
 .skills__subtitle {
     font-size: 1.2rem;
+    margin-bottom: 60px;
+}
+
+.skills__presentation {
+    font-size: 1.7rem;
+    margin-bottom: 60px;
+}
+
+.skills__front-end__container,
+.skills__back-end__container,
+.skills__tools__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-block: 40px;
+}
+
+.skills__front-end__image,
+.skills__back-end__image,
+.skills__tools__image {
+    width: 70px;
+    height: 70px;
+    transition: display 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.skills__front-end__image img,
+.skills__back-end__image img,
+.skills__tools__image img {
+    width: 100%;
+    height: 100%;
+}
+
+.skills__front-end__image h4,
+.skills__back-end__image h4,
+.skills__tools__image h4 {
+    text-align: center;
+    color: #232946;
+    margin-top: 6px;
+    font-size: 1rem;
+    display: none;
+}
+
+.skills__front-end__image:hover h4,
+.skills__back-end__image:hover h4,
+.skills__tools__image:hover h4 {
+    display: block;
+}
+
+.separator {
+    width: 75%;
+    border: 1px solid #fffffe;
+    margin: 60px auto;
 }
