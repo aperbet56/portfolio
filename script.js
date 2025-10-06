@@ -77,6 +77,36 @@ particlesJS("particles", {
 
 // Récupération des éléments HTML5
 const subtitle = document.querySelector(".info__text__subtitle");
+const allServicesCards = document.querySelectorAll(".services__carousel__card");
+const indicator = document.querySelector(".carousel__indicator");
+const numberSlider = allServicesCards.length;
+
+// Création de la variable index et de la variable count
+let index = 0;
+let count = 1;
+
+// Affichage dynamique du compteur dès l'arrivée sur la page web
+indicator.textContent = `${count} / ${numberSlider}`;
+
+// Déclaration de la fonction nextImage qui va permettre de passer à l'image suivante
+const nextImage = () => {
+  allServicesCards[index].classList.remove("active");
+
+  if (index < numberSlider - 1) {
+    index++;
+    count++;
+    indicator.textContent = `${count} / ${numberSlider}`;
+  } else {
+    index = 0;
+    count = 1;
+    indicator.textContent = `${count} / ${numberSlider}`;
+  }
+  allServicesCards[index].classList.add("active");
+  //console.log(index);
+};
+
+//La méthode setInterval() appelle à plusieurs reprises la fonction nextImage avec un délai fixe entre chaque appel de 4s.
+setInterval(nextImage, 4000);
 
 new Typewriter(subtitle, {
   loop: true,
