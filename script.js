@@ -105,8 +105,8 @@ const nextImage = () => {
   //console.log(index);
 };
 
-//La méthode setInterval() appelle à plusieurs reprises la fonction nextImage avec un délai fixe entre chaque appel de 4s.
-setInterval(nextImage, 4000);
+//La méthode setInterval() appelle à plusieurs reprises la fonction nextImage avec un délai fixe entre chaque appel de 3s.
+setInterval(nextImage, 3000);
 
 new Typewriter(subtitle, {
   loop: true,
