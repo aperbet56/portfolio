@@ -43,6 +43,10 @@ section {
     height: auto;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /**** html ****/
 
 html {
@@ -81,7 +85,7 @@ header {
 }
 
 .info__text {
-    width: 80%;
+    width: 100%;
     text-align: center;
     padding: 20px;
 }
@@ -410,4 +414,69 @@ header {
 .hobbies__card__title {
     text-align: center;
     margin-top: 10px;
+}
+
+/**** section footer contact ****/
+
+footer {
+    background-color: #232946;
+    color: #fffffe;
+    font-size: 1.2rem;
+    padding: 40px;
+}
+
+footer,
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__contact__title {
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.footer__contact__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer__contact__list__item {
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in-out,
+        color 0.3s ease-in-out;
+}
+
+.footer__contact__list__item:hover {
+    background-color: #eebbc3;
+}
+
+.footer__contact__list__item:hover a,
+.footer__contact__list__item:hover i {
+    color: #232946;
+}
+
+.footer__contact__list__item i {
+    width: 20px;
+    padding-left: 0;
+    padding-right: 30px;
+}
+
+.footer__contact__list__item a,
+.footer__contact__list__item i {
+    color: #b8c1ec;
+}
+
+.footer__copyright {
+    text-align: center;
+    line-height: 1.7;
 }
