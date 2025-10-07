@@ -80,6 +80,22 @@ const subtitle = document.querySelector(".info__text__subtitle");
 const allServicesCards = document.querySelectorAll(".services__carousel__card");
 const indicator = document.querySelector(".carousel__indicator");
 const numberSlider = allServicesCards.length;
+const footerCopyrightYear = document.querySelector(".footer__copyright__year");
+
+new Typewriter(subtitle, {
+  loop: true,
+  deleteSpeed: 50,
+})
+  .changeDelay(50)
+  .typeString("<strong> Développeuse web !</strong> ")
+  .pauseFor(2000)
+  .deleteChars(6)
+  .typeString(`<span style="color:#b8c1ec"> Front-end !</span> `)
+  .pauseFor(2000)
+  .deleteChars(12)
+  .typeString(`<span style="color:#eebbc3"> Back-end !</span> `)
+  .pauseFor(2000)
+  .start();
 
 // Création de la variable index et de la variable count
 let index = 0;
@@ -108,17 +124,18 @@ const nextImage = () => {
 //La méthode setInterval() appelle à plusieurs reprises la fonction nextImage avec un délai fixe entre chaque appel de 3s.
 setInterval(nextImage, 3000);
 
-new Typewriter(subtitle, {
-  loop: true,
-  deleteSpeed: 50,
-})
-  .changeDelay(50)
-  .typeString("<strong> Développeuse web !</strong> ")
-  .pauseFor(2000)
-  .deleteChars(6)
-  .typeString(`<span style="color:#b8c1ec"> Front-end !</span> `)
-  .pauseFor(2000)
-  .deleteChars(12)
-  .typeString(`<span style="color:#eebbc3"> Back-end !</span> `)
-  .pauseFor(2000)
-  .start();
+// Déclaration de la fonction getCurrentYear qui va permettre l'affichage dynamique de l'année
+const getCurrentYear = () => {
+  // Récupération de la date actuelle stockée dans la constante date
+  const date = new Date();
+  //console.log(date);
+
+  // Récupération de l'année stockée dans la constante year
+  const year = date.getFullYear();
+  //console.log(year);
+
+  // Affichage dynamique de l'année en cours
+  footerCopyrightYear.textContent = `${year}`;
+};
+// Appel de la fonction getCurrentYear()
+getCurrentYear();
