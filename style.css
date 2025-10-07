@@ -201,8 +201,15 @@ header {
 .skills__tools__image {
     width: 70px;
     height: 70px;
-    transition: display 0.3s ease-in-out;
+    transition: display 0.3s ease-in-out,
+        transform 0.3s ease-in-out;
     margin-bottom: 20px;
+}
+
+.skills__front-end__image:hover,
+.skills__back-end__image:hover,
+.skills__tools__image:hover {
+    transform: scale(1.05);
 }
 
 .skills__front-end__image img,
