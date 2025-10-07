@@ -141,8 +141,9 @@ header {
 }
 
 .about__description {
+    width: 80%;
+    text-align: left;
     font-size: 1.2rem;
-    line-height: 1.8;
 }
 
 .btn {
@@ -416,6 +417,26 @@ header {
     margin-top: 10px;
 }
 
+
+/***** arrow *****/
+
+.arrow__btn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 6px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.arrow__btn i {
+    font-size: 2rem;
+    color: #f25f4c;
+}
+
 /**** section footer contact ****/
 
 footer {
@@ -478,5 +499,4 @@ footer,
 
 .footer__copyright {
     text-align: center;
-    line-height: 1.7;
 }
