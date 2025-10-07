@@ -81,6 +81,7 @@ const allServicesCards = document.querySelectorAll(".services__carousel__card");
 const indicator = document.querySelector(".carousel__indicator");
 const numberSlider = allServicesCards.length;
 const footerCopyrightYear = document.querySelector(".footer__copyright__year");
+const arrowBtn = document.querySelector(".arrow__btn");
 
 new Typewriter(subtitle, {
   loop: true,
@@ -139,3 +140,13 @@ const getCurrentYear = () => {
 };
 // Appel de la fonction getCurrentYear()
 getCurrentYear();
+
+// Ecoute de l'événement "click" sur la flèche
+arrowBtn.addEventListener("click", () => {
+  // La méthode Window.scrollTo() permet de faire défiler la fenêtre pour atteindre les coordonnées données dans le document.
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth", // Le défilement se fait en douceur
+  });
+});
