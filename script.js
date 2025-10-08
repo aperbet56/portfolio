@@ -97,7 +97,7 @@ new Typewriter(subtitle, {
   .typeString(`<span style="color:#b8c1ec"> Front-end !</span> `)
   .pauseFor(2000)
   .deleteChars(12)
-  .typeString(`<span style="color:#eebbc3"> Back-end !</span> `)
+  .typeString(`<span style="color:#ffc0ad"> Back-end !</span> `)
   .pauseFor(2000)
   .start();
 
@@ -144,15 +144,18 @@ const getCurrentYear = () => {
 // Appel de la fonction getCurrentYear()
 getCurrentYear();
 
-// Ecoute de l'événement "click" sur la flèche
-arrowBtn.addEventListener("click", () => {
+// Déclaration de la fonction scroll qui va permettre de gérer le scroll
+const scroll = () => {
   // La méthode Window.scrollTo() permet de faire défiler la fenêtre pour atteindre les coordonnées données dans le document.
   window.scrollTo({
     top: 0,
     left: 0,
     behavior: "smooth", // Le défilement se fait en douceur
   });
-});
+};
+
+// Ecoute de l'événement "click" sur la flèche
+arrowBtn.addEventListener("click", scroll);
 
 // Déclaration de la fonction toggleNav qui va permettre l'affichage des liens de navigation
 const toggleNav = () => {
