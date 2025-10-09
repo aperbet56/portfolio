@@ -93,6 +93,7 @@ header,
 .projects__cards__container,
 .card__front,
 .card__back,
+.button,
 footer,
 .footer__contact,
 .footer__contact__list {
@@ -173,7 +174,13 @@ footer {
 .projects,
 .skills,
 .card__front,
-.card__back {
+.card__back,
+.btn,
+.btn__github,
+.skills__front-end__image h4,
+.skills__back-end__image h4,
+.skills__tools__image h4,
+.carousel__indicator {
     color: var(--blue);
 }
 
@@ -184,12 +191,13 @@ footer {
 .hobbies__title,
 .footer__contact__title {
     font-size: 2rem;
-    text-align: center;
     text-transform: capitalize;
-    margin-bottom: 30px;
 }
 
-.about__title,
+.services__title,
+.projects__title,
+.hobbies__title,
+.footer__contact__title .about__title,
 .about__avatar,
 .about__description,
 .skills__title,
@@ -203,8 +211,6 @@ footer {
 .projects__subtitle,
 .projects__cards__title,
 .hobbies__subtitle {
-    font-size: 1.2rem;
-    text-align: center;
     margin-bottom: 60px;
 }
 
@@ -212,6 +218,22 @@ footer {
 .burger__btn,
 .arrow__btn {
     position: fixed;
+}
+
+.btn,
+.btn__github {
+    font-weight: 600;
+}
+
+.skills__subtitle,
+.services__subtitle,
+.projects__subtitle,
+.projects__cards__title,
+.hobbies__subtitle,
+.btn,
+.btn__github {
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 /**** header ****/
@@ -310,6 +332,7 @@ header {
 
 .info__text__title {
     font-size: 3.4rem;
+    text-shadow: 2px 2px 2px rgba(248, 248, 248, 0.6);
     line-height: 1.4;
     font-weight: 700;
     margin-block: 20px;
@@ -339,12 +362,8 @@ header {
 }
 
 .btn {
-    text-align: center;
     padding: 12px 16px;
     background-color: var(--orange);
-    color: var(--blue);
-    font-size: 1.2rem;
-    font-weight: 600;
     border-radius: 10px;
     transition: background-color 0.3s ease-in-out;
 }
@@ -386,7 +405,6 @@ header {
 .skills__back-end__image h4,
 .skills__tools__image h4 {
     text-align: center;
-    color: var(--blue);
     margin-top: 6px;
     font-size: 1rem;
     display: none;
@@ -449,7 +467,6 @@ header {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    color: var(--blue);
     font-weight: 600;
 }
 
@@ -501,6 +518,34 @@ header {
     text-align: center;
     font-size: 1.2rem;
     margin-bottom: 30px;
+}
+
+.button {
+    margin-block: 30px;
+}
+
+.btn__github {
+    position: relative;
+    z-index: 1;
+}
+
+.btn__github::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -7%;
+    transform: translateY(-50%);
+    display: block;
+    z-index: -1;
+    width: calc(1.2rem * 2);
+    height: calc(1.2rem * 2);
+    border-radius: calc(1.2rem);
+    background-color: var(--orange);
+    transition: width 0.6s cubic-bezier(0.8, 0, 0.24, 0.99);
+}
+
+.btn__github:hover::before {
+    width: calc(100% + 12%);
 }
 
 /**** section hobbies ****/
@@ -562,19 +607,8 @@ footer {
 
 .footer__contact__list__item {
     margin-bottom: 12px;
-    padding: 12px;
     border-radius: 6px;
-    transition: background-color 0.3s ease-in-out,
-        color 0.3s ease-in-out;
-}
-
-.footer__contact__list__item:hover {
-    background-color: var(--orange);
-}
-
-.footer__contact__list__item:hover a,
-.footer__contact__list__item:hover i {
-    color: var(--blue);
+    transition: color 0.3s ease-in-out;
 }
 
 .footer__contact__list__item i {
@@ -586,6 +620,11 @@ footer {
 .footer__contact__list__item a,
 .footer__contact__list__item i {
     color: var(--purple);
+}
+
+.footer__contact__list__item:hover a,
+.footer__contact__list__item:hover i {
+    color: var(--orange);
 }
 
 .footer__copyright {
