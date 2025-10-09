@@ -9,6 +9,7 @@
     --white: #fffffe;
     --purple: #b8c1ec;
     --orange: #ffc0ad;
+    /*#ffd700;*/
     --font-title: "Alan Sans", sans-serif;
     --font: "DM Sans", sans-serif;
 }
@@ -84,11 +85,9 @@ header,
 .navigation__list,
 .burger__btn,
 .about,
-.skills__front-end__container,
-.skills__back-end__container,
-.skills__tools__container,
+.skills__list,
 .services,
-.hobbies__container,
+.hobbies__list,
 .arrow__btn,
 .projects__cards__container,
 .card__front,
@@ -107,7 +106,7 @@ body,
 .navigation__list,
 .about,
 .services,
-.hobbies__card,
+.hobbies__list__card,
 .card__front,
 .card__back,
 footer,
@@ -115,11 +114,9 @@ footer,
     flex-direction: column;
 }
 
-.skills__front-end__container,
-.skills__back-end__container,
-.skills__tools__container,
+.skills__list,
 .projects__cards__container,
-.hobbies__container,
+.hobbies__list,
 .footer__contact__list {
     flex-wrap: wrap;
     gap: 30px;
@@ -137,10 +134,8 @@ header,
 
 #particles,
 .about__avatar img,
-.skills__front-end__image img,
-.skills__back-end__image img,
-.skills__tools__image img,
-.hobbies__card__image img,
+.skills__list__item img,
+.hobbies__list__card img,
 .card,
 .card__front,
 .card__back,
@@ -177,9 +172,7 @@ footer {
 .card__back,
 .btn,
 .btn__github,
-.skills__front-end__image h4,
-.skills__back-end__image h4,
-.skills__tools__image h4,
+.skills__list__item h4,
 .carousel__indicator {
     color: var(--blue);
 }
@@ -197,7 +190,8 @@ footer {
 .services__title,
 .projects__title,
 .hobbies__title,
-.footer__contact__title .about__title,
+.footer__contact__title,
+.about__title,
 .about__avatar,
 .about__description,
 .skills__title,
@@ -379,15 +373,11 @@ header {
     margin-bottom: 60px;
 }
 
-.skills__front-end__container,
-.skills__back-end__container,
-.skills__tools__container {
+.skills__list {
     margin-block: 40px;
 }
 
-.skills__front-end__image,
-.skills__back-end__image,
-.skills__tools__image {
+.skills__list__item {
     width: 70px;
     height: 70px;
     transition: display 0.3s ease-in-out,
@@ -395,26 +385,22 @@ header {
     margin-bottom: 20px;
 }
 
-.skills__front-end__image:hover,
-.skills__back-end__image:hover,
-.skills__tools__image:hover {
+.skills__list__item:hover {
     transform: scale(1.07);
 }
 
-.skills__front-end__image h4,
-.skills__back-end__image h4,
-.skills__tools__image h4 {
+.skills__list__item h4 {
     text-align: center;
     margin-top: 6px;
     font-size: 1rem;
     display: none;
 }
 
-.skills__front-end__image:hover h4,
-.skills__back-end__image:hover h4,
-.skills__tools__image:hover h4 {
+.skills__list__item:hover h4 {
     display: block;
 }
+
+/**** div separator ****/
 
 .separator {
     width: 75%;
@@ -504,7 +490,6 @@ header {
     position: absolute;
     border-radius: 8px;
     backface-visibility: hidden;
-    /* La propriété backface-visibility indique si la face arrière d'un élément doit être visible lorsqu'elle est orientée vers l'utilisateur. */
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
 }
@@ -550,17 +535,17 @@ header {
 
 /**** section hobbies ****/
 
-.hobbies__card {
+.hobbies__list__card {
     width: 30%;
     height: auto;
     display: flex;
 }
 
-.hobbies__card__image {
+.hobbies__list__card__image {
     height: 200px;
 }
 
-.hobbies__card__image img {
+.hobbies__list__card__image img {
     border-radius: 50%;
     object-fit: cover;
     animation: rotationImage 3.5s infinite linear;
@@ -574,7 +559,7 @@ header {
     }
 }
 
-.hobbies__card__title {
+.hobbies__list__card__title {
     text-align: center;
     margin-top: 10px;
 }
