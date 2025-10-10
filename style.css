@@ -43,9 +43,25 @@ h2,
 h3,
 h4 {
     font-family: var(--font-title);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+h2,
+h3 {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.7rem;
 }
 
 p {
+    font-size: 1.2rem;
     line-height: 1.7;
 }
 
@@ -62,12 +78,6 @@ a,
 p,
 button {
     font-family: var(--font);
-}
-
-/**** html ****/
-
-html {
-    scroll-behavior: smooth;
 }
 
 /**** body ****/
@@ -177,29 +187,6 @@ footer {
     color: var(--blue);
 }
 
-.about__title,
-.skills__title,
-.services__title,
-.projects__title,
-.hobbies__title,
-.footer__contact__title {
-    font-size: 2rem;
-    text-transform: capitalize;
-}
-
-.services__title,
-.projects__title,
-.hobbies__title,
-.footer__contact__title,
-.about__title,
-.about__avatar,
-.about__description,
-.skills__title,
-.skills__presentation {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
 .skills__subtitle,
 .services__subtitle,
 .projects__subtitle,
@@ -222,7 +209,6 @@ footer {
 .skills__subtitle,
 .services__subtitle,
 .projects__subtitle,
-.projects__cards__title,
 .hobbies__subtitle,
 .btn,
 .btn__github {
@@ -327,7 +313,7 @@ header {
 .info__text__title {
     font-size: 3.4rem;
     text-shadow: 2px 2px 2px rgba(248, 248, 248, 0.6);
-    line-height: 1.4;
+    line-height: 1.5;
     font-weight: 700;
     margin-block: 20px;
 }
@@ -352,7 +338,7 @@ header {
 .about__description {
     width: 80%;
     text-align: left;
-    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
 .btn {
@@ -369,7 +355,6 @@ header {
 /**** section skills ****/
 
 .skills__presentation {
-    font-size: 1.7rem;
     margin-bottom: 60px;
 }
 
@@ -390,7 +375,6 @@ header {
 }
 
 .skills__list__item h4 {
-    text-align: center;
     margin-top: 6px;
     font-size: 1rem;
     display: none;
@@ -444,7 +428,6 @@ header {
 
 .services__carousel__card__text {
     text-align: center;
-    font-size: 1.2rem;
     margin-block: 20px;
 }
 
@@ -457,10 +440,6 @@ header {
 }
 
 /**** section projects *****/
-
-.projects__cards__title {
-    font-size: 1.7rem;
-}
 
 .project__card__wrapper {
     position: relative;
@@ -501,7 +480,6 @@ header {
 
 .card__back__description {
     text-align: center;
-    font-size: 1.2rem;
     margin-bottom: 30px;
 }
 
@@ -560,8 +538,10 @@ header {
 }
 
 .hobbies__list__card__title {
+    font-size: 1.2rem;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 0;
 }
 
 /***** arrow  btn *****/
@@ -619,6 +599,19 @@ footer {
 /**** Responsive design version tablette ****/
 
 @media screen and (max-width: 991px) {
+    .burger__btn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .info__text__title {
+        font-size: 3.2rem;
+    }
+
+    .info__text__subtitle {
+        font-size: 2.2rem;
+    }
+
     .project__card__wrapper {
         width: 45%;
     }
@@ -627,15 +620,26 @@ footer {
 /**** Responsive design version mobile ****/
 
 @media screen and (max-width: 767px) {
-
-    .navigation,
-    .burger__btn {
-        opacity: 0;
+    h2 {
+        font-size: 1.8rem;
     }
 
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    .info__text__title {
+        font-size: 3rem;
+    }
+
+    .info__text__subtitle {
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+
+    .about__description,
     .project__card__wrapper {
         width: 95%;
-        height: 300px;
     }
 
     .card__back__description {
