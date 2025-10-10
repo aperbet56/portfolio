@@ -465,7 +465,7 @@ header {
 .project__card__wrapper {
     position: relative;
     width: 28%;
-    height: 400px;
+    height: 300px;
     perspective: 2000px;
     perspective-origin: bottom;
     margin-bottom: 40px;
@@ -614,4 +614,32 @@ footer {
 
 .footer__copyright {
     text-align: center;
+}
+
+/**** Responsive design version tablette ****/
+
+@media screen and (max-width: 991px) {
+    .project__card__wrapper {
+        width: 45%;
+    }
+}
+
+/**** Responsive design version mobile ****/
+
+@media screen and (max-width: 767px) {
+
+    .navigation,
+    .burger__btn {
+        opacity: 0;
+    }
+
+    .project__card__wrapper {
+        width: 95%;
+        height: 300px;
+    }
+
+    .card__back__description {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
 }
