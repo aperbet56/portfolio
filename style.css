@@ -596,6 +596,39 @@ footer {
     text-align: center;
 }
 
+/**** classe reveal pour créer un effet d'apparition au défilement. J'utilise du CSS pour gérer l'animation d'apparition. ****/
+
+[class*="reveal-"] {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.reveal__visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal-1 {
+    transition-delay: 0.1s;
+}
+
+.reveal-2 {
+    transition-delay: 0.2s;
+}
+
+.reveal-3 {
+    transition-delay: 0.3s;
+}
+
+.reveal-4 {
+    transition-delay: 0.4s;
+}
+
+.reveal-5 {
+    transition-delay: 0.5s;
+}
+
 /**** Responsive design version tablette ****/
 
 @media screen and (max-width: 991px) {
