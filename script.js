@@ -175,3 +175,40 @@ navLinks.forEach((link) =>
     toggleNav();
   })
 );
+
+// Création de la constante threshold
+const threshold = 0.1;
+
+// Création de l'objet options qui va définir les options de mon intersectionObserver
+const options = {
+  root: null,
+  rootMargin: "0px", // marges sur les 4 côtés de la zone d'affichage
+  threshold,
+};
+
+// Déclaration de la fonction handleIntersect ayant comme paramètres entries et observer
+const handleIntersect = (entries, observer) => {
+  // Pour chaque entrée
+  entries.forEach((entry) => {
+    if (entry.intersectionRatio > threshold) {
+      // Ajout de la classe reveal__visible à lorsque l'élément cible devient visible dans la page
+      entry.target.classList.add("reveal__visible");
+      // La méthode unobserve() de l'interface IntersectionObserver indique à l'objet IntersectionObserver courant de cesser d'observer l'élément cible spécifié.
+      observer.unobserve(entry.target);
+    }
+  });
+};
+
+// Ecoute de l'événement "DOMContentLoaded" sur la fenêtre
+window.addEventListener("DOMContentLoaded", () => {
+  // Pour détecter quand l'élément rentre dans la zone d'affichage on peut se reposer sur l'API intersection observer.
+  // Création d'un nouvel observateur en appelant le constructeur IntersectionObserver() en précisant une fonction callback à appeler quand l'intersection franchit l'un de des paliers, handleIntersect(), et mon ensemble d'options.
+  const observer = new IntersectionObserver(handleIntersect, options);
+  // Récupération de tous les éléments HTML5 ayant la classe reveal
+  const targets = document.querySelectorAll(`[class*="reveal-"]`);
+  // Pour chaque chaque élément ayant la classe reveal
+  targets.forEach((target) => {
+    // Surveiller l'évolution de la visibilité de l'intersection de plusieurs éléments par rapport au viewport en appelant observer.observe() pour chacun de ces éléments.
+    observer.observe(target);
+  });
+});
