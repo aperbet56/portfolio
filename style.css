@@ -341,6 +341,49 @@ header {
     margin-bottom: 30px;
 }
 
+.wave__emoji {
+    display: inline-block;
+    transform-origin: 70% 70%;
+    animation: wave 1.8s linear infinite;
+}
+
+/**** Animation wave ****/
+
+@keyframes wave {
+
+    0%,
+    50%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    10%,
+    30% {
+        transform: rotate(-10deg);
+    }
+
+    20% {
+        transform: rotate(12deg);
+    }
+
+    40% {
+        transform: rotate(9deg);
+    }
+}
+
+.wave__emoji img {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-left: 4px;
+}
+
+.hello {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
 .btn {
     padding: 12px 16px;
     background-color: var(--orange);
