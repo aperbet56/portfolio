@@ -1,5 +1,7 @@
 ## PORTFOLIO
 
+![Design preview for the project](./img/preview.png)
+
 ## Le challenge
 
 Création de mon portfolio en HTML5, CSS3 et JavaScript avec un effet d'apparition au défilement de la page web.
