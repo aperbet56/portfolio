@@ -94,10 +94,14 @@ new Typewriter(subtitle, {
   .typeString("<strong> Développeuse web !</strong> ")
   .pauseFor(2000)
   .deleteChars(6)
-  .typeString(`<span style="color:#b8c1ec"> Front-end !</span> `)
+  .typeString(
+    `<span style="color:#b8c1ec"><strong> Front-end !</strong></span> `
+  )
   .pauseFor(2000)
   .deleteChars(12)
-  .typeString(`<span style="color:#ffc0ad"> Back-end !</span> `)
+  .typeString(
+    `<span style="color:#ffc0ad"><strong> Back-end !</strong></span> `
+  )
   .pauseFor(2000)
   .start();
 
