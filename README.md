@@ -23,6 +23,8 @@ Lien vers le projet : https://aperbet56.github.io/portfolio/
 - Variables CSS
 - Commentaires HTML
 - Commentaires CSS
+- Page validé par le validateur HTML du W3C
+- Page validé par le validateur CSS du W3C
 - JavaScript
 - Code JavaScript commenté
 - API intersection observer
