@@ -9,7 +9,7 @@
     --white: #fffffe;
     --purple: #b8c1ec;
     --orange: #ffc0ad;
-    /*#ffd700;*/
+    /*#ffd700*/
     --font-title: "Alan Sans", sans-serif;
     --font: "DM Sans", sans-serif;
 }
@@ -514,6 +514,11 @@ header {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
+}
+
+.card__front__image {
+    width: 180px;
+    height: 180px;
 }
 
 .card__back {
