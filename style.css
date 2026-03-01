@@ -517,8 +517,12 @@ header {
 }
 
 .card__front__image {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
+}
+
+.card__front__image img {
+    object-fit: contain;
 }
 
 .card__back {
