@@ -87,22 +87,24 @@ const menuBurger = document.querySelector(".burger__btn");
 const navLinks = document.querySelectorAll(".link");
 
 new Typewriter(subtitle, {
-  loop: true,
-  deleteSpeed: 50,
+  //loop: true,
+  deleteSpeed: 40,
 })
-  .changeDelay(50)
+  .changeDelay(40)
   .typeString("<strong> Développeuse web !</strong> ")
-  .pauseFor(2000)
+  .pauseFor(1500)
   .deleteChars(6)
   .typeString(
     `<span style="color:#b8c1ec"><strong> Front-end !</strong></span> `
   )
-  .pauseFor(2000)
+  .pauseFor(1500)
   .deleteChars(12)
   .typeString(
     `<span style="color:#ffc0ad"><strong> Back-end !</strong></span> `
   )
-  .pauseFor(2000)
+  .pauseFor(1500)
+  .deleteChars(11)
+  .typeString(`<span><strong> web !</strong></span> `)
   .start();
 
 // Création de la variable index et de la variable count
