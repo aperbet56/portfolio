@@ -15,9 +15,10 @@ Lien vers le projet : https://aperbet56.github.io/portfolio/
 - Utilisation des balises sémantique HTML5
 - CSS3
 - Flexbox
-- Animations CSS ( transition, @keyframes)
+- Animations CSS (transition, @keyframes)
 - Desktop first
 - Page web responsive
+- Font awesome CDN
 - Utilisation d'un normaliseur : le fichier normalize.css
 - Importation des polices "Alan Sans" et "DM Sans"
 - Variables CSS
@@ -28,3 +29,4 @@ Lien vers le projet : https://aperbet56.github.io/portfolio/
 - JavaScript
 - Code JavaScript commenté
 - API intersection observer
+- Minification des fichiers CSS et JavaScript
