@@ -2,15 +2,21 @@
 
 ![Design preview for the project](./img/preview.png)
 
-## Le challenge
+## 🚀 Le challenge
 
-Création de mon portfolio professionnel | Annabelle PERBET développeuse web, en HTML5, CSS3 et JavaScript avec un effet d'apparition au défilement de la page web.
+Ce projet est un portfolio web personnel et moderne, conçu pour présenter mes projets, mes compétences et mon parcours professionnel en tant que développeuse web. Il a été entièrement développé à la main (en HTML5, CSS3) pour garantir des performances optimales et un design sur mesure.
 
-## Démonstration
+Ce projet comporte différentes fonctionnalitées :
+
+- **Design Responsive :** Adapté à tous les écrans (ordinateurs, tablettes et mobiles) grâce aux media queries CSS.
+- **Navigation Fluide :** Défilement fluide (_smooth scroll_) vers les différentes sections.
+- **Effet d'apparittion au défilement de la page**: via JavaScript.
+
+## 📸 Démonstration
 
 Lien vers le projet : https://aperbet56.github.io/portfolio/
 
-## Projet développé avec
+## 🛠️ Projet développé avec
 
 - Utilisation des balises sémantique HTML5
 - CSS3
@@ -18,7 +24,7 @@ Lien vers le projet : https://aperbet56.github.io/portfolio/
 - Animations CSS (transition, @keyframes)
 - Desktop first
 - Page web responsive
-- Font awesome CDN
+- Font-awesome CDN
 - Utilisation d'un normaliseur : le fichier normalize.css
 - Importation des polices "Alan Sans" et "DM Sans"
 - Variables CSS
