@@ -36,3 +36,7 @@ Lien vers le projet : https://aperbet56.github.io/portfolio/
 - Code JavaScript commenté
 - API intersection observer
 - Minification des fichiers CSS et JavaScript
+
+## 📝 Licence
+
+Ce projet est sous licence MIT.
