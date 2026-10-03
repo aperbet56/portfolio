@@ -37,6 +37,12 @@ Lien vers le projet : https://aperbet56.github.io/portfolio/
 - API intersection observer
 - Minification des fichiers CSS et JavaScript
 
+## ✉️ Contact
+
+- **Nom :** Annabelle PERBET
+- **LinkedIn :** [https://www.linkedin.com/in/annabelle-perbet-862784256/]
+- **Portfolio en ligne :** [https://aperbet56.github.io/portfolio/]
+
 ## 📝 Licence
 
 Ce projet est sous licence MIT.
