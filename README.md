@@ -37,6 +37,20 @@ Lien vers le projet : https://aperbet56.github.io/portfolio/
 - API intersection observer
 - Minification des fichiers CSS et JavaScript
 
+## 📂 Structure du Projet
+
+```text
+portfolio/
+│
+├── index.html          # Page principale du site
+├── style.css           # Fichier de styles principal
+├── script.js           # Logique et interactivité en JavaScript
+│
+├── img/                # photos des projets et photo de profil
+│
+└── README.md           # Fichier de documentation du projet
+```
+
 ## ✉️ Contact
 
 - **Nom :** Annabelle PERBET
